@@ -13,7 +13,7 @@ from models import CR, Section, Specification, SpecVersion
 from schemas import QueryRequest
 
 app= FastAPI()
-DATABASE_URL = "mysql+mysqlconnector://root:pass..00@127.0.0.1:3306/3gpp_db"
+DATABASE_URL = "mysql+mysqlconnector://"
 engine = create_engine(DATABASE_URL)
 SessionLocal= sessionmaker(autocommit=False,autoflush=False,bind=engine)
 metadata = MetaData()
